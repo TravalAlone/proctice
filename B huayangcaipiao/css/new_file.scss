@@ -1,0 +1,261 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    img{
+        vertical-align: middle;
+    }
+}
+body{
+    background: #F0F0F0;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    img:first-child{
+        width: 20%;
+    }
+    img:nth-child(2){
+        width: 8%;
+        margin-left: 65%;
+    }
+}
+.banner{
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+    animation: move 5s linear infinite alternate;
+    img{
+        width: 33.33%;
+        float: left;
+    }
+}
+@keyframes move{
+    0%{left: 0;}
+    20%{left: 0;}
+    40%{left: -100%;}
+    60%{left: -100%;}
+    80%{left: -200%;}
+    100%{left: -200%;}
+}
+.nav{
+    width: 100%;
+    height: 145px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-bottom: 1.5px solid #ccc;
+    >div{
+        width: 17%;
+        text-align: center;
+        .divtop{
+            margin: 0 auto;
+            width: 70%;
+            height: 45px;
+            background: url(../img/c_logo.png) no-repeat 0 0;
+            background-size: 100%;
+        }
+    }
+    .div2 .divtop{
+        background-position: 0 -44px;
+    }
+    .div3 .divtop{
+        background-position: 0 -89px;
+    }
+    .div4 .divtop{
+        background-position: 0 -134px;
+    }
+    .div5 .divtop{
+        background-position: 0 -178px;
+    }
+    .div6 .divtop{
+        background-position: 0 -223px;
+    }
+    .div7 .divtop{
+        background-position: 0 -268px;
+    }
+    .div8 .divtop{
+        background-position: 0 -312px;
+    }
+    .div9 .divtop{
+        background-position: 0 -357px;
+    }
+    .div0 .divtop{
+        background-position: 0 -401px;
+    }
+}
+.toutiao{
+    background: #fff;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    >img{
+        width: 10%;
+        border-right: 1px solid #ccc;
+        padding-right: 10px;
+    }
+    span{
+        margin-left: 5px;
+        color: #666;
+    }
+    a {
+        margin-left: 110px;
+        img{
+        height: 50%;
+    }
+}
+}
+.tmain{
+    width: 90%;
+    height: 100px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 20px 10px 0 10px;
+    position: relative;
+    ul{
+        display: flex;
+        li{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #f00;
+            color: #fff;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 30px;
+            &:hover{
+                background: #2B97F2;
+            }
+        }
+        li:last-child{
+            background: #fff;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    p{
+        padding-top: 30px;
+    }
+    .aa{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background: #f00;
+        padding: 8px 15px;
+        border-radius: 5px;
+        a{
+            color: #fff;
+        }
+    }
+}
+.alqmain{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    .alqleft{
+        width: 8%;
+        background: #fff;
+        text-align: center;
+        position: relative;
+        h3{
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            color: #FF9004;
+        }
+    }
+    & div:not(.alqleft){
+        width: 45%;
+        background: #fff;
+        margin-left: 3px;
+        display: flex;
+        img{
+            width: 40%;
+            height:70%;
+            transform: translate(0,30%);
+        }
+        p{
+            transform: translate(0,25%);
+            font-weight: 500;
+        }
+    }
+}
+.dashititle{
+    margin-top: 10px;
+    background: #fff;
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    >img:first-child{
+        width: 3%;
+        height: 30%;
+    }
+    p{
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    a{
+        margin-left: 260px;
+        img{
+            width: 90%;
+        height: 50%;
+    }
+}
+}
+.dashimain{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 10px 10px;
+    border-top: 1px solid #ccc;
+    .dashileft{
+        width: 20%;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .dashiright{
+        float: left;
+        margin-left: 10px;
+        p{
+            height: 35px;
+            line-height: 35px;
+            &:last-child{
+                color: #999;
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding-top: 20px;
+    p{
+        padding: 10px 0;
+        color: #999;
+    }
+}
+.lianjie{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 40px;
+    img{
+        width: 100%;
+    }
+}
